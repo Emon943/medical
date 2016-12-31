@@ -1,0 +1,167 @@
+<!--Add title-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <title>404 Error</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+	<link rel="shortcut icon" href="http://murgency.com/images/favicon.ico">
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+
+<link href="../css/bootstrap-datepicker.css" rel="stylesheet">
+<link href="../css/bootstrap-timepicker.min.css" rel="stylesheet">
+<!--<link href="css/clockpicker.css" rel="stylesheet">-->
+<link rel="stylesheet" href="../css/owl.theme.css">
+<link rel="stylesheet" href="../css/owl.carousel.css">
+<link rel="stylesheet" href="../css/pubnub.css">
+<link rel="stylesheet" href="../css/intlTelInput.css">
+<link rel="stylesheet" href="../css/starrating.min.css">
+<link href="../css/navbar.css" rel="stylesheet">
+<link href="../css/styles.css" rel="stylesheet">
+
+
+<!--Google font-->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700,800" rel="stylesheet">
+<!--font awesome icons-->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script>
+<script src="../js/bootstrap-timepicker.min.js"></script>
+<!--<script src="js/clockpicker.js"></script>-->
+<script src="../js/common.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<!-- owl -->
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/intlTelInput.js"></script>
+<script src="../js/paging.js"></script>
+<script src="../js/pubnub-3.7.12.min.js"></script>
+<script type="text/javascript" src="http://murgency.com/js/pubnub.js"></script>
+<script  src="../js/starrating.js"></script>
+<script  src="../js/requestTableSearch.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSyS0cNzpey25DMdxu-ZKcnEREVNn1mPE&libraries=places&callback=initAutocomplete"  defer></script>
+<meta name="csrf-token" content="">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+		
+</head>
+<body style="background-color: #727773;">
+	<!-- Navigation -->
+<nav class="navbar business-header navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://murgency.com/home"><img src="http://murgency.com/images/logo.png"/></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Authentication Links -->
+        <ul class="navbar-right call">
+            <li class="btn-call back hidden-xs"><a href="#" data-toggle="modal" data-target="#requestCallback"
+                                                   data-backdrop="static" data-keyboard="false">Request Info</a></li>
+            <li class="btn-call"><a href="tel:+918291791431"><i class="fa fa-mobile"></i> +91 - 8291791431</a></li>
+        </ul>
+                    <ul class="navbar-right top-rightnav">
+                <li class="log-reg"><a href="http://murgency.com/register">Register</a></li>
+                <li class="log-reg"><a href="http://murgency.com/login">Login</a></li>
+            </ul>
+                <ul class="navbar-right top-nav-social">
+            <li class="app-ics"><a href="https://itunes.apple.com/us/app/murgency/id920618732?mt=8"
+                                   title="Get App for iPhone" target="_blank"><img
+                            src="http://murgency.com/images/ios-icon.png"></a></li>
+            <li class="app-ics"><a href="https://play.google.com/store/apps/details?id=com.murgency&hl=en"
+                                   title="Get App for Android" target="_blank"><img
+                            src="http://murgency.com/images/play-store-icon.png"></a></li>
+        </ul>
+        <div class="collapse navbar-collapse navbar-right navbar-murgency no-transition"
+             id="bs-example-navbar-collapse-1">
+            <!--<button type="button" class="navbar-toggle close" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <i class="fa fa-close"></i>
+            </button> -->
+            <ul class="nav navbar-nav navbar-right murgency-navbar">
+                <li class="nav-emer">
+                    <a href="http://murgency.com/emergency">Emergency</a>
+                </li>
+                <li class="nav-amb">
+                    <a href="http://murgency.com/home-request/ambulance">Ambulance</a>
+                </li>
+                <li class="dropdown nav-home">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Medical Care At Home
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://murgency.com/home-request/physiotherapist">Physiotherapist at Home</a></li>
+                        <li><a href="http://murgency.com/home-request/nurse">Nurse at Home</a></li>
+                        <li><a href="http://murgency.com/home-request/doctor">Doctor at Home</a></li>
+                        <li><a href="http://murgency.com/home-request/patient-attendant">Patient Attendant at Home</a></li>
+                    </ul>
+                </li>
+                <li class="nav-health">
+                    <a href="http://murgency.com/home-health-plans/senior">Health Packages</a>
+                </li>
+                <li class="nav-faq">
+                    <a href="#" data-toggle="modal" data-target="#askdoc" data-backdrop="static" data-keyboard="false">Ask
+                        a Doctor</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    //bootstrap navbar collapse it automatically whenever another navbar is triggered
+    $('.top-logged-in').click(function () {
+        $(".navbar-collapse").collapse('hide');
+    });
+
+    $('li.nav-faq a').on('click', function () {
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-65215147-1', 'auto');
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Ask a Doc - chat_open',
+            eventAction: 'chat_open',
+            eventLabel: 'Ask a Doc'
+        });
+    });
+
+</script>	<!--render main body content-->
+        	
+<div class="container error-container" >
+		<div class="row multistep-form" style="padding-left:50px;">
+			<h1 align="left" style="font-size: 70px;">Ooops...!</h1>
+			<h3 align="left">We can't seem to find the page you are looking for</h3>
+			<h3 align="left">Error 404</h3>
+			<br />
+			<p align="left">Here are some useful links instead,<p>
+			<p align="left"><a href="http://murgency.com/home">Home</a><br />
+			<a href="http://murgency.com/faqs">FAQs</a></p>
+			</p>
+		</div>
+	</div>
+
+</body>
+</html>

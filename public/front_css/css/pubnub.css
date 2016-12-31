@@ -1,0 +1,103 @@
+#input,#toinput{
+  display: none;
+}
+#login a.button {
+  display: block;
+  margin: 1.5em auto;
+  text-decoration: none;
+  background-color: #555;
+  color: #fff;
+  text-shadow: #222 0px 1px 0px;
+  border-radius: 8px;
+  text-align: center;
+  width: 50%;
+}
+#presence {
+  line-height: 2em;
+}
+#chat input[type=text] {
+  font-size: 1.2em;
+  width: calc(100% - 125px);
+  height: 58px;
+}
+#output,#tooutput{
+  display: none;
+}
+#output p,#tooutput p {
+  min-height: 64px;
+}
+#output strong,#tooutput strong {
+  line-height: 1.5em;
+}
+#output span. #output em,#tooutput span. #tooutput em {
+  font-size: 1.2em;
+}
+.subscr{
+  text-align: right;
+  color: #ce1126;
+}
+#presence {
+  color: #ce1126;
+}
+#answer{
+  display: none;
+}
+.me {
+  line-height: 48px;
+  font-size: 1.2em;
+}
+.me .avatar {
+  width: 48px;
+  height: 48px;
+}
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #aaa;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+section[section] {
+  display: none; /* for IE < 11 */
+}
+.poof {
+  animation: poof 2.5s ease-in 0s 1;
+}
+.join {
+  color: green;
+}
+.leave, .timeout {
+  color: #ce1126;
+}
+#action {
+  opacity: 0;
+}
+@keyframes poof { from {opacity: 1;} to {opacity: 0;}  }
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.html');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 10px;
+}
+.fa-github::before {
+    content: "\f09b";
+}
